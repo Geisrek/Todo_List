@@ -13,6 +13,8 @@ function addTask(){
     }
 }
 function deleteTask(index){
+  const updatedTasks=tasks.filter((element,i)=> i!==index);
+  setTasks(updatedTasks)
 
 }
 function mouveTaskUp(index){
