@@ -33,6 +33,12 @@ return(<div className="to-do-list">
         {tasks.map((task,index)=>
             <li key={index}>
                 <span className='text'>{task}</span>
+                <button className='delete-button'
+                onClick={()=>deleteTask(index)}>🗑️</button>
+                <button className='mouve-up-button'
+                onClick={()=>mouveTaskUp(index)}>👆🏻</button>
+                <button className='mouve-down-button'
+                onClick={()=>mouveTaskUp(index)}>👇🏻</button>
             </li>
         )}
     </ol>
