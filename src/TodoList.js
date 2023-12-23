@@ -26,7 +26,7 @@ return(<div className="to-do-list">
     value={newTask}
     onChange={handelInputChange}
     />
-    <button className='add-buttob'
+    <button className='add-button'
     onClick={addTask}
     >add</button>
     <ol>
@@ -35,9 +35,9 @@ return(<div className="to-do-list">
                 <span className='text'>{task}</span>
                 <button className='delete-button'
                 onClick={()=>deleteTask(index)}>🗑️</button>
-                <button className='mouve-up-button'
+                <button className='mouve-button'
                 onClick={()=>mouveTaskUp(index)}>👆🏻</button>
-                <button className='mouve-down-button'
+                <button className='mouve-button'
                 onClick={()=>mouveTaskDown(index)}>👇🏻</button>
             </li>
         )}
