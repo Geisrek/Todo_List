@@ -18,7 +18,11 @@ function deleteTask(index){
 
 }
 function mouveTaskUp(index){
-
+  if(index>0){
+    const updatedTasks=[...tasks];
+    [updatedTasks[index],updatedTasks[index-1]]=[updatedTasks[index-1],updatedTasks[index]]
+    setTasks(updatedTasks)
+  }
 }
 function mouveTaskDown(index){
     
