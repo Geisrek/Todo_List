@@ -1,5 +1,5 @@
 import React , {useState} from 'react'
-
+//the imojies site is : https://www.freetool.dev/emoji-picker
 function TodoList(){
 const [tasks,setTasks]=useState(["Walk","Eat","Run"])
 const [newTask,setNewTask]=useState("")
@@ -38,7 +38,7 @@ return(<div className="to-do-list">
                 <button className='mouve-up-button'
                 onClick={()=>mouveTaskUp(index)}>👆🏻</button>
                 <button className='mouve-down-button'
-                onClick={()=>mouveTaskUp(index)}>👇🏻</button>
+                onClick={()=>mouveTaskDown(index)}>👇🏻</button>
             </li>
         )}
     </ol>
